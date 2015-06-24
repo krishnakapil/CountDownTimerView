@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.tskk.countdowntimer.ui.CountDownTimerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:prefixText="Timer Ends In"
+        app:suffixText="!!"
+        app:timeMilliSeconds="11430000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <com.tskk.countdowntimer.ui.CountDownTimerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:prefixText="Timer Ends In"
+        app:timeMilliSeconds="77410000"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <com.tskk.countdowntimer.ui.CountDownTimerView
+        android:id="@+id/short_timer_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>
